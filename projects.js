@@ -1,4 +1,4 @@
-// 灰叔SI · 项目数据
+// 灰叔 · 项目数据
 // 新增项目：复制一段 { ... }，改好字段即可。卡片按这里的顺序排列。
 //   cat   分类：mystic 玄学·东方 / life 美业·生活 / learn 学习·游戏 / tools 工具·平台
 //   shot  预览图，放在 shots/ 目录（建议 960×600 的 webp）
@@ -14,6 +14,16 @@ window.CATEGORIES = {
 
 window.PROJECTS = [
   {
+    title: "6:52 · 清晨之家",
+    en: "House at Dawn",
+    desc: "在清晨六点五十二分的家中自由漫游：卧室、客厅、厨房与浴室，织物、玻璃与洒落的水留下生活的痕迹。",
+    url: "https://house-at-dawn.pages.dev/",
+    shot: "shots/house-at-dawn-20261115.webp",
+    cat: "life",
+    status: "3D 互动体验",
+    recent: true,
+  },
+  {
     title: "霓虹街区",
     en: "Neon District",
     desc: "雨夜赛博街区里的第一人称射击：浏览器里打开就能玩，约 2 MB、可安装、可离线、手机能玩。机器人会包抄、擒抱、挥刀，有拔刀术剑客 Boss 和二周目。用 Mirage 引擎做的。",
@@ -22,7 +32,6 @@ window.PROJECTS = [
     download: "https://paraldameta.github.io/mirage-engine/neon-district.html",   // 单个 HTML 文件（约 2 MB），卡片左上角和预览里都有下载入口
     cat: "learn",
     status: "可玩 · 开源引擎",
-    recent: true,
   },
   {
     title: "SI知识库",

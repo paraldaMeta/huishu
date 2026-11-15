@@ -1,8 +1,8 @@
-# 灰叔SI造物室
+# 灰叔造物室
 
 灰叔的产品与项目展示页。卡片收录已上线的网站、开源项目和本地工具，提供标题、一句话介绍及预览图；有公开入口的卡片可以直接打开。
 
-在线地址：https://paraldameta.github.io/huishu-si/
+在线地址：https://paraldameta.github.io/huishu/
 
 ## 增删项目
 
