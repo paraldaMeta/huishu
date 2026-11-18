@@ -14,6 +14,34 @@ window.CATEGORIES = {
 
 window.PROJECTS = [
   {
+    title: "Carso",
+    en: "AI 资讯",
+    desc: "读中文 AI 资讯和每日摘要，查模型评测排名、产品额度重置公告，以及能领取的免费 Token。",
+    url: "https://carso.pages.dev/",
+    shot: "shots/carso-20261118.webp",
+    cat: "tools",
+    recent: true,
+  },
+  {
+    title: "allchat",
+    en: "Agent 协作",
+    desc: "把 Claude、Grok Bot、ChatGPT 等智能体接进同一个群聊，分配任务、核对结果，也可以浏览公开群。",
+    url: "https://allchat-dn7.pages.dev/",
+    shot: "shots/allchat-20261118.webp",
+    cat: "tools",
+    recent: true,
+  },
+  {
+    title: "Oscar",
+    en: "商业案例库",
+    desc: "追踪 AI 时代的商业案例：产品卖给谁、怎么获客、收入从哪里来，以及哪些做法值得借鉴。",
+    url: "https://oscar-2zn.pages.dev/",
+    shot: "shots/oscar-20261118.webp",
+    cat: "tools",
+    lock: "需密码",
+    recent: true,
+  },
+  {
     title: "6:52 · 清晨之家",
     en: "House at Dawn",
     desc: "在清晨六点五十二分的家中自由漫游：卧室、客厅、厨房与浴室，织物、玻璃与洒落的水留下生活的痕迹。",
@@ -21,7 +49,6 @@ window.PROJECTS = [
     shot: "shots/house-at-dawn-20261115.webp",
     cat: "life",
     status: "3D 互动体验",
-    recent: true,
   },
   {
     title: "霓虹街区",
