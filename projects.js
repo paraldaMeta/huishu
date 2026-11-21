@@ -1,6 +1,7 @@
 // 灰叔 · 项目数据
 // 新增项目：复制一段 { ... }，改好字段即可。卡片按这里的顺序排列。
 //   cat   分类：mystic 玄学·东方 / life 美业·生活 / learn 学习·游戏 / tools 工具·平台
+//   icon  可选：卡片标题旁的产品图标，放在 icons/ 目录
 //   shot  预览图，放在 shots/ 目录（建议 960×600 的 webp）
 //   lock  可选：需登录 / 受邀 / 内部 —— 会显示成卡片上的小标签
 //   status 可选：开源 / 交互原型 / 本地工具；recent 标记本次新收录的项目
@@ -15,11 +16,33 @@ window.CATEGORIES = {
 window.PROJECTS = [
   {
     title: "Carso",
+    icon: "icons/carso-gold.png",
     en: "AI 资讯",
     desc: "读中文 AI 资讯和每日摘要，查模型评测排名、产品额度重置公告，以及能领取的免费 Token。",
     url: "https://carso.pages.dev/",
-    shot: "shots/carso-20261118.webp",
+    shot: "shots/carso-20261121.webp",
     cat: "tools",
+    recent: true,
+  },
+  {
+    title: "Racso",
+    icon: "icons/racso.png",
+    en: "灰叔 AI 工具箱",
+    desc: "按场景查技能、MCP 与工作流，配套演示稿、现场案例与素材库；另有人物建模实验室，可调体型、皮肤与表情。",
+    url: "https://racso-5ob.pages.dev/",
+    shot: "shots/racso-20261103.webp",
+    cat: "tools",
+    lock: "需密码",
+  },
+  {
+    title: "Oscar",
+    icon: "icons/oscar.png",
+    en: "商业案例库",
+    desc: "追踪 AI 时代的商业案例：产品卖给谁、怎么获客、收入从哪里来，以及哪些做法值得借鉴。",
+    url: "https://oscar-2zn.pages.dev/",
+    shot: "shots/oscar-20261118.webp",
+    cat: "tools",
+    lock: "需密码",
     recent: true,
   },
   {
@@ -29,16 +52,6 @@ window.PROJECTS = [
     url: "https://allchat-dn7.pages.dev/",
     shot: "shots/allchat-20261118.webp",
     cat: "tools",
-    recent: true,
-  },
-  {
-    title: "Oscar",
-    en: "商业案例库",
-    desc: "追踪 AI 时代的商业案例：产品卖给谁、怎么获客、收入从哪里来，以及哪些做法值得借鉴。",
-    url: "https://oscar-2zn.pages.dev/",
-    shot: "shots/oscar-20261118.webp",
-    cat: "tools",
-    lock: "需密码",
     recent: true,
   },
   {
@@ -122,15 +135,6 @@ window.PROJECTS = [
     shot: "shots/cloud-duet.webp",
     cat: "tools",
     status: "开源 · 自部署",
-  },
-  {
-    title: "Racso",
-    en: "灰叔 AI 工具箱",
-    desc: "按场景查技能、MCP 与工作流，配套演示稿、现场案例与素材库；另有人物建模实验室，可调体型、皮肤与表情。",
-    url: "https://racso-5ob.pages.dev/",
-    shot: "shots/racso-20261103.webp",
-    cat: "tools",
-    lock: "需密码",
   },
   {
     title: "AI 娘开机动画",

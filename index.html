@@ -189,6 +189,8 @@
     margin: 8px 0 0;
     font-family: var(--serif); font-size: 23px; font-weight: 700; line-height: 1.3;
   }
+  .card h3:has(.project-icon) { align-items: center; }
+  .project-icon { width: 32px; height: 32px; border-radius: 7px; flex: none; }
   .card h3 .en { font-family: var(--sans); font-size: 13px; font-weight: 500; color: var(--faint); letter-spacing: .02em; }
   .card p { margin: 8px 0 0; font-size: 15px; line-height: 1.7; color: var(--muted); text-wrap: pretty; }
   .foot {
@@ -260,11 +262,11 @@
   </div><dialog id="preview" aria-labelledby="preview-title"><button type="button" aria-label="关闭预览">×</button><img alt=""><h2 id="preview-title"></h2><p></p><a target="_blank" rel="noopener">打开项目 ↗</a> <a class="dl" download hidden>下载 HTML ↓</a></dialog><footer>
     <div class="wrap">
       <span>© <span id="year">2026</span> 灰叔</span>
-      <span>更新于 <time datetime="2026-11-18">2026 年 11 月 18 日</time> · <a href="https://github.com/paraldaMeta" target="_blank" rel="noopener">github.com/paraldaMeta</a></span>
+      <span>更新于 <time datetime="2026-11-21">2026 年 11 月 21 日</time> · <a href="https://github.com/paraldaMeta" target="_blank" rel="noopener">github.com/paraldaMeta</a></span>
     </div>
   </footer>
 
-<script src="projects.js?v=carso-allchat-oscar-20261118"></script>
+<script src="projects.js?v=family-icons-20261121"></script>
 <script>
 (function () {
   var projects = window.PROJECTS || [];
@@ -316,6 +318,13 @@
     body.appendChild(meta);
 
     var h = el("h3", null, p.title);
+    if (p.icon) {
+      var icon = new Image(32, 32);
+      icon.className = "project-icon";
+      icon.alt = "";
+      icon.src = p.icon;
+      h.prepend(icon);
+    }
     if (p.en) h.appendChild(el("span", "en", p.en));
     body.appendChild(h);
     body.appendChild(el("p", null, p.desc));
