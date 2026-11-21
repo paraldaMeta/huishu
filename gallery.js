@@ -2,7 +2,7 @@ const reduced = matchMedia('(prefers-reduced-motion: reduce)');
 const dialog = document.querySelector('#preview');
 window.showProject = p => {
   dialog.querySelector('img').src = p.shot;
-  dialog.querySelector('img').alt = p.title + ' 界面';
+  dialog.querySelector('img').alt = p.shotAlt || p.title + ' 界面';
   dialog.querySelector('h2').textContent = p.title;
   dialog.querySelector('p').textContent = p.desc;
   const link = dialog.querySelector('a');
