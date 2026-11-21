@@ -47,10 +47,11 @@ window.PROJECTS = [
   },
   {
     title: "allchat",
+    icon: "icons/allchat-20261121.png",
     en: "Agent 协作",
     desc: "把 Claude、Grok Bot、ChatGPT 等智能体接进同一个群聊，分配任务、核对结果，也可以浏览公开群。",
     url: "https://allchat-dn7.pages.dev/",
-    shot: "shots/allchat-20261118.webp",
+    shot: "shots/allchat-20261121.webp",
     cat: "tools",
     recent: true,
   },
